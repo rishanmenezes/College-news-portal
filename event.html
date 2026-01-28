@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" data-role="user">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MIT Mysore — Event Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="guard.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="back-link" href="index.html">← Back to all events</a>
+      <h1 id="eventTitle">Loading event…</h1>
+      <p class="tag" id="eventTag">Detailed information & registration</p>
+    </div>
+    <div class="controls">
+      <button type="button" class="pill-link" data-action="logout">Logout</button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="event-page" aria-live="polite">
+    <div class="event-banner" id="eventBanner" aria-hidden="true"></div>
+    <section class="event-hero">
+      <div class="event-meta" id="eventMeta"></div>
+      <div class="pill" id="eventCategory">Loading…</div>
+      <p id="eventSummary" class="hero-sub"></p>
+    </section>
+
+    <div class="event-layout single-column">
+      <article class="event-card">
+        <h2>Overview</h2>
+        <p id="eventDescription"></p>
+        <ul class="event-detail-list" id="eventDetails"></ul>
+        <div class="event-highlights" id="eventHighlights"></div>
+      </article>
+    </div>
+
+    <section class="event-card event-deep-dive" aria-labelledby="deepDiveTitle">
+      <div class="section-heading">
+        <h3 id="deepDiveTitle">Need-to-know Brief</h3>
+        <p>Get the context, format, and promise before committing.</p>
+      </div>
+      <div class="info-grid" id="infoGrid"></div>
+    </section>
+
+    <section class="event-card event-agenda" aria-labelledby="agendaTitle">
+      <div class="section-heading">
+        <h3 id="agendaTitle">Sample Agenda</h3>
+        <p>Richer hour-by-hour view for the Read action.</p>
+      </div>
+      <ol class="agenda-list" id="agendaList"></ol>
+    </section>
+
+    <section class="event-card event-resources" aria-labelledby="resourcesTitle">
+      <div class="section-heading">
+        <h3 id="resourcesTitle">Resources & Logistics</h3>
+        <p>Downloadables, prep items, and quick-support contacts.</p>
+      </div>
+      <div class="resource-links" id="resourceLinks"></div>
+    </section>
+
+    <p id="eventError" class="status-note error" hidden></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE-NEWS AND EVENTS PORTAL</p>
+  </footer>
+
+  <script src="event.js"></script>
+</body>
+</html>

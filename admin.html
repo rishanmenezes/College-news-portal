@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en" data-role="admin">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MIT Mysore — Admin Console</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="guard.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>Admin Console</h1>
+      <p class="tag">Manage events & registrations</p>
+    </div>
+    <div class="controls admin-controls">
+      <div class="header-profile" aria-label="Signed-in admin">
+        <div class="profile-avatar" id="adminAvatar">A</div>
+        <div class="profile-mini">
+          <strong id="adminProfileName">Admin User</strong>
+          <small id="adminProfileEmail">admin@mitmysore.edu</small>
+        </div>
+        <span class="badge" id="adminProfileRole">Admin</span>
+        <button type="button" class="pill-link" data-action="logout">Logout</button>
+      </div>
+      <a class="pill-link" href="admin-profile.html">Profile</a>
+      <a class="pill-link" href="login.html">← Switch role</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="admin-page">
+    <section class="admin-hero">
+      <div>
+        <p class="eyebrow">Operations dashboard</p>
+        <h2>Keep the campus calendar sharp</h2>
+        <p class="hero-sub">Add events, curate details, and move registrations forward in one focused workspace.</p>
+      </div>
+      <img class="admin-art" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=60" alt="Admin workspace illustration" />
+    </section>
+
+    <section class="dashboard-metrics" aria-label="Live stats">
+      <article class="metric-card">
+        <p class="metric-label">Live events</p>
+        <strong id="metricEvents">0</strong>
+        <span class="metric-foot">Total scheduled</span>
+      </article>
+      <article class="metric-card">
+        <p class="metric-label">Upcoming week</p>
+        <strong id="metricUpcoming">0</strong>
+        <span class="metric-foot">Next 7 days</span>
+      </article>
+      <article class="metric-card">
+        <p class="metric-label">Pending approvals</p>
+        <strong id="metricPending">0</strong>
+        <span class="metric-foot">Awaiting review</span>
+      </article>
+    </section>
+
+    <section class="admin-section">
+      <div class="section-heading between">
+        <h2>Create / Update Events</h2>
+        <button id="refreshEvents" class="pill-link" type="button">Refresh list</button>
+      </div>
+      <form id="eventForm" class="admin-form" novalidate>
+        <div class="form-grid">
+          <label>
+            <span>Title *</span>
+            <input type="text" name="title" required placeholder="Event title" />
+          </label>
+          <fieldset class="category-field">
+            <legend>Category *</legend>
+            <div class="category-tabs admin-tabs" role="radiogroup" aria-label="Event categories">
+              <label class="category-pill">
+                <input type="radio" name="category" value="campus" required checked />
+                <span>Campus</span>
+              </label>
+              <label class="category-pill">
+                <input type="radio" name="category" value="academics" required />
+                <span>Academics</span>
+              </label>
+              <label class="category-pill">
+                <input type="radio" name="category" value="sports" required />
+                <span>Sports</span>
+              </label>
+              <label class="category-pill">
+                <input type="radio" name="category" value="events" required />
+                <span>Events</span>
+              </label>
+              <label class="category-pill">
+                <input type="radio" name="category" value="tech" required />
+                <span>Tech Talks</span>
+              </label>
+              <label class="category-pill">
+                <input type="radio" name="category" value="hackathon" required />
+                <span>Hackathons</span>
+              </label>
+              <label class="category-pill">
+                <input type="radio" name="category" value="placements" required />
+                <span>Placements</span>
+              </label>
+              <label class="category-pill">
+                <input type="radio" name="category" value="seminar" required />
+                <span>Seminars</span>
+              </label>
+              <label class="category-pill">
+                <input type="radio" name="category" value="competition" required />
+                <span>Competitions</span>
+              </label>
+            </div>
+          </fieldset>
+          <label>
+            <span>Date *</span>
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            <span>Start Time</span>
+            <input type="time" name="startTime" />
+          </label>
+          <label>
+            <span>End Time</span>
+            <input type="time" name="endTime" />
+          </label>
+          <label>
+            <span>Location</span>
+            <input type="text" name="location" placeholder="Venue" />
+          </label>
+          <label>
+            <span>Contact Email</span>
+            <input type="email" name="contactEmail" placeholder="events@mitmysore.edu" />
+          </label>
+          <label>
+            <span>Registration Link</span>
+            <input type="url" name="registrationLink" placeholder="https://..." />
+          </label>
+          <label>
+            <span>Speakers (comma separated)</span>
+            <input type="text" name="speakers" placeholder="Name 1, Name 2" />
+          </label>
+          <label>
+            <span>Highlights (comma separated)</span>
+            <input type="text" name="highlights" placeholder="Highlight A, Highlight B" />
+          </label>
+        </div>
+        <label>
+          <span>Excerpt *</span>
+          <input type="text" name="excerpt" required placeholder="Short summary" />
+        </label>
+        <label>
+          <span>Full Description *</span>
+          <textarea name="content" rows="4" required placeholder="Detailed information..."></textarea>
+        </label>
+        <button type="submit">Save Event</button>
+        <p id="eventFormStatus" class="event-status" role="status" aria-live="polite"></p>
+      </form>
+      <div id="eventsList" class="admin-table" aria-live="polite"></div>
+    </section>
+
+    <section class="admin-section">
+      <div class="section-heading between">
+        <h2>Student registrations</h2>
+        <a class="pill-link" href="registrations-admin.html">Open management view</a>
+      </div>
+      <p class="status-note">Use the dedicated registrations workspace to review, accept, or reject submissions.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE-ADMIN CONSOLE</p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

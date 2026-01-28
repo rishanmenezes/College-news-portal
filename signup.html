@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MIT Mysore — Portal Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-body auth-surface">
+  <nav class="auth-nav" aria-label="Portal navigation">
+    <div class="auth-brand">
+      <span class="brand-mark">
+        <img src="assets/mit-logo.png" alt="MIT Mysore logo" loading="lazy">
+      </span>
+      <div>
+        <strong>MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE</strong>
+        <small>News & Events Portal</small>
+      </div>
+    </div>
+    <div class="auth-links">
+      <a class="auth-link" href="login.html">Sign-in</a>
+      <a class="auth-link active" href="signup.html">Sign-up</a>
+      <a class="auth-link" href="support.html">Support</a>
+    </div>
+  </nav>
+  <main class="login-card" aria-live="polite">
+    <h1>Sign up</h1>
+    <form id="signupForm" class="login-form" novalidate>
+      <label>
+        <span>Role *</span>
+        <select name="role" required>
+          <option value="">Select the workspace…</option>
+          <option value="user">Student / Reader</option>
+          <option value="admin">Admin / Staff</option>
+        </select>
+      </label>
+      <label>
+        <span>Full name</span>
+        <input type="text" name="name" placeholder="Your name" required />
+      </label>
+      <label>
+        <span>College email</span>
+        <input type="email" name="email" placeholder="you@mitmysore.edu" required />
+      </label>
+      <label>
+        <span>Set password</span>
+        <input type="password" name="password" placeholder="Choose a password" minlength="6" required />
+      </label>
+      <label>
+        <span>Confirm password</span>
+        <input type="password" name="confirm" placeholder="Repeat password" minlength="6" required />
+      </label>
+      <button type="submit">Create account</button>
+      <p id="signupStatus" class="event-status" role="status"></p>
+    </form>
+  </main>
+
+  <script src="signup.js"></script>
+</body>
+</html>

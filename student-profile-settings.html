@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" data-role="user">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MIT Mysore — Student Profile Settings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="guard.js" defer></script>
+</head>
+<body class="profile-shell">
+  <header class="site-header profile-header">
+    <div class="brand">
+      <h1>Manage student profile</h1>
+      <p class="tag">Edit your details and password</p>
+    </div>
+    <div class="controls admin-controls">
+      <div class="header-profile" aria-label="Signed-in student">
+        <div class="profile-avatar" id="profileAvatar">S</div>
+        <div class="profile-mini">
+          <strong id="profileName">Student</strong>
+          <small id="profileEmail">you@mitmysore.edu</small>
+        </div>
+        <span class="badge" id="profileRole">Student</span>
+        <a class="pill-link" href="student-profile.html">← Back to profile</a>
+        <button type="button" class="pill-link" data-action="logout">Logout</button>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="profile-page settings-page">
+    <section class="profile-forms">
+      <form id="profileForm" class="profile-form" novalidate>
+        <h3>Profile details</h3>
+        <div class="form-grid">
+          <label>
+            <span>Full name *</span>
+            <input type="text" name="name" required placeholder="Your full name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" readonly />
+          </label>
+          <label>
+            <span>Phone number</span>
+            <input type="tel" name="phone" placeholder="10-digit mobile" />
+          </label>
+          <label>
+            <span>Department *</span>
+            <select name="department" required>
+              <option value="">Select department…</option>
+              <option value="CSE">Computer Science &amp; Engineering</option>
+              <option value="ISE">Information Science &amp; Engineering</option>
+              <option value="ECE">Electronics &amp; Communication</option>
+              <option value="EEE">Electrical &amp; Electronics</option>
+              <option value="Mechanical">Mechanical</option>
+              <option value="Civil">Civil</option>
+              <option value="AI & ML">AI &amp; ML</option>
+            </select>
+          </label>
+          <label>
+            <span>Year *</span>
+            <select name="year" required>
+              <option value="">Select year…</option>
+              <option value="Year 1">Year 1</option>
+              <option value="Year 2">Year 2</option>
+              <option value="Year 3">Year 3</option>
+              <option value="Year 4">Year 4</option>
+              <option value="Alumni">Alumni</option>
+            </select>
+          </label>
+          <label>
+            <span>Profile photo URL</span>
+            <input type="url" name="photo" placeholder="https://example.com/photo.jpg" />
+          </label>
+        </div>
+        <label class="bio-field">
+          <span>Bio</span>
+          <textarea name="bio" rows="4" maxlength="240" placeholder="Add interests, clubs, or aspirations."></textarea>
+          <small><span id="bioCount">0</span> / 240</small>
+        </label>
+        <div class="social-fields">
+          <label>
+            <span>Social link 1</span>
+            <input type="url" name="socialLink1" placeholder="https://linkedin.com/in/you" />
+          </label>
+          <label>
+            <span>Social link 2</span>
+            <input type="url" name="socialLink2" placeholder="https://github.com/you" />
+          </label>
+          <label>
+            <span>Social link 3</span>
+            <input type="url" name="socialLink3" placeholder="https://instagram.com/you" />
+          </label>
+        </div>
+        <button type="submit">Save profile</button>
+        <p id="profileFormStatus" class="event-status" role="status"></p>
+      </form>
+
+      <form id="passwordForm" class="profile-form password-panel" novalidate>
+        <h3>Update password</h3>
+        <label>
+          <span>Current password *</span>
+          <input type="password" name="currentPassword" required placeholder="Enter current password" />
+        </label>
+        <label>
+          <span>New password *</span>
+          <input type="password" name="newPassword" required minlength="6" placeholder="At least 6 characters" />
+        </label>
+        <label>
+          <span>Confirm new password *</span>
+          <input type="password" name="confirmPassword" required minlength="6" placeholder="Repeat new password" />
+        </label>
+        <button type="submit">Update password</button>
+        <p id="passwordFormStatus" class="event-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE — STUDENT PROFILE SETTINGS</p>
+  </footer>
+
+  <script src="profile.js"></script>
+</body>
+</html>

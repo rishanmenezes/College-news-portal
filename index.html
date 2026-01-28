@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" data-role="user">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE — News Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="guard.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE</h1>
+      <p class="tag">college news & events</p>
+    </div>
+
+    <div class="controls">
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="Search news, events, people..." aria-label="Search news" />
+      </div>
+      <div class="filters" role="toolbar" aria-label="Category filters">
+        <button class="filter-btn active" data-cat="all">All</button>
+        <button class="filter-btn" data-cat="campus">Campus</button>
+        <button class="filter-btn" data-cat="academics">Academics</button>
+        <button class="filter-btn" data-cat="sports">Sports</button>
+        <button class="filter-btn" data-cat="events">Events</button>
+        <button class="filter-btn" data-cat="tech">Tech Talks</button>
+        <button class="filter-btn" data-cat="hackathon">Hackathons</button>
+        <button class="filter-btn" data-cat="placements">Placements</button>
+        <button class="filter-btn" data-cat="seminar">Seminars</button>
+        <button class="filter-btn" data-cat="competition">Competitions</button>
+      </div>
+      <div class="header-profile" aria-label="Signed-in student">
+        <div class="profile-avatar" id="profileAvatar">S</div>
+        <div class="profile-mini">
+          <strong id="profileName">Student</strong>
+          <small id="profileEmail">you@mitmysore.edu</small>
+        </div>
+        <span class="badge" id="profileRole">Student</span>
+        <a class="pill-link" href="student-profile.html">Profile</a>
+        <button type="button" class="pill-link" data-action="logout" aria-label="Sign out">Logout</button>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="newsGrid" class="news-grid" aria-live="polite">
+      <!-- News cards injected here -->
+    </section>
+  </main>
+
+  <template id="cardTemplate">
+    <article class="card">
+      <div class="card-media" aria-hidden="true">
+        <img class="card-image" alt="" />
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="badge"></span><time class="date"></time></div>
+        <h3 class="card-title"></h3>
+        <p class="card-excerpt"></p>
+        <div class="card-actions">
+          <a class="read-btn" data-action="details" href="#">Read</a>
+          <a class="card-register" data-action="register" href="#">Register</a>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <footer class="site-footer">
+    <p>MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE-NEWS AND EVENTS PORTAL</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

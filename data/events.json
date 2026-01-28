@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "title": "New science lab inaugurated",
+    "category": "campus",
+    "date": "2025-11-10",
+    "excerpt": "A state-of-the-art research lab opened for students.",
+    "content": "The Interdisciplinary Science Lab now offers 4 collaborative pods, spectroscopy units, and a rapid prototyping corner for capstone teams.",
+    "location": "Science Block, Level 3",
+    "startTime": "10:00",
+    "endTime": "13:00",
+    "speakers": [
+      "Dr. Sahana Rao",
+      "Dean Vishal Mehta"
+    ],
+    "registrationLink": "https://mitmysore.edu/events/science-lab",
+    "contactEmail": "events@mitmysore.edu",
+    "highlights": [
+      "Live equipment demo",
+      "Student research posters",
+      "Networking lunch"
+    ],
+    "color1": "#ff7ab6",
+    "color2": "#7afcff"
+  },
+  {
+    "id": 2,
+    "title": "Midterm schedule announced",
+    "category": "academics",
+    "date": "2025-11-12",
+    "excerpt": "Check the midterm timetable for all departments.",
+    "content": "Comprehensive timetables with room allocations and seating plans are now live on the academic portal.",
+    "location": "Academic Portal",
+    "startTime": "09:00",
+    "endTime": "18:00",
+    "speakers": [],
+    "registrationLink": "https://mitmysore.edu/academics/midterms",
+    "contactEmail": "coea@mitmysore.edu",
+    "highlights": [
+      "Download PDF schedules",
+      "Venue maps",
+      "Exam guidelines"
+    ],
+    "color1": "#ffd36b",
+    "color2": "#ff7ab6"
+  },
+  {
+    "id": 4,
+    "title": "Tech fest workshops announced",
+    "category": "events",
+    "date": "2025-11-16",
+    "excerpt": "Hands-on workshops across AI, Robotics and Web.",
+    "content": "Five curated tracks with mentor hours, project showcases, and certificate distribution.",
+    "location": "Innovation Center",
+    "startTime": "09:30",
+    "endTime": "17:30",
+    "speakers": [
+      "Prof. Nidhi Rao",
+      "Ananya Shetty"
+    ],
+    "registrationLink": "https://mitmysore.edu/events/techfest",
+    "contactEmail": "techfest@mitmysore.edu",
+    "highlights": [
+      "AI lab tour",
+      "Robot arena",
+      "Portfolio reviews"
+    ],
+    "color1": "#b18cff",
+    "color2": "#7afcff"
+  },
+  {
+    "id": 5,
+    "title": "Scholarship applications open",
+    "category": "academics",
+    "date": "2025-11-05",
+    "excerpt": "Apply for merit and need-based scholarships.",
+    "content": "More than 120 scholarships including alumni and CSR fellowships are now accepting applications.",
+    "location": "Scholarship Desk",
+    "startTime": "10:00",
+    "endTime": "17:00",
+    "speakers": [
+      "Financial Aid Team"
+    ],
+    "registrationLink": "https://mitmysore.edu/aid/scholarships",
+    "contactEmail": "scholarships@mitmysore.edu",
+    "highlights": [
+      "Document checklist",
+      "Eligibility review",
+      "On-spot Q&A"
+    ],
+    "color1": "#ffb199",
+    "color2": "#ffd36b"
+  },
+  {
+    "id": 6,
+    "title": "AI Tech Talk: Foundations and Ethics",
+    "category": "tech",
+    "date": "2025-11-20",
+    "excerpt": "A tech talk on AI ethics and practical foundations.",
+    "content": "Panel covers responsible AI, model deployment gotchas, and career pathways.",
+    "location": "Seminar Hall A",
+    "startTime": "11:00",
+    "endTime": "13:00",
+    "speakers": [
+      "Dr. Kavya Iyer",
+      "Sanjay Rao"
+    ],
+    "registrationLink": "https://mitmysore.edu/tech/ai-ethics",
+    "contactEmail": "cse@mitmysore.edu",
+    "highlights": [
+      "Live demos",
+      "Ethics checklist",
+      "Internship leads"
+    ],
+    "color1": "#7bd389",
+    "color2": "#7afcff"
+  },
+  {
+    "id": 7,
+    "title": "Hackathon: Build for Good",
+    "category": "hackathon",
+    "date": "2025-12-03",
+    "excerpt": "24-hour hackathon with prizes and mentorship.",
+    "content": "Focus on civic-tech and campus sustainability with 12 mentors and 6 challenge statements.",
+    "location": "Makers Lab",
+    "startTime": "09:00",
+    "endTime": "09:00",
+    "speakers": [
+      "Alumni Mentors"
+    ],
+    "registrationLink": "https://mitmysore.edu/hackathons/build-for-good",
+    "contactEmail": "hackathons@mitmysore.edu",
+    "highlights": [
+      "Prototyping kits",
+      "Pitch coaching",
+      "Scholarship prizes"
+    ],
+    "color1": "#ffd36b",
+    "color2": "#ff7ab6"
+  },
+  {
+    "id": 8,
+    "title": "Placement Drive — TechCorp",
+    "category": "placements",
+    "date": "2025-11-25",
+    "excerpt": "On-campus hiring drive for final year students.",
+    "content": "Includes aptitude test, technical interview rounds, and HR conversations.",
+    "location": "Training & Placement Block",
+    "startTime": "08:30",
+    "endTime": "18:00",
+    "speakers": [
+      "TechCorp Talent Team"
+    ],
+    "registrationLink": "https://mitmysore.edu/placements/techcorp",
+    "contactEmail": "placements@mitmysore.edu",
+    "highlights": [
+      "Mock interview booths",
+      "Resume clinics",
+      "On-spot offers"
+    ],
+    "color1": "#b18cff",
+    "color2": "#ffb199"
+  },
+  {
+    "id": 9,
+    "title": "Robotics Workshop",
+    "category": "events",
+    "date": "2025-12-07",
+    "excerpt": "Hands-on robotics workshop for beginners.",
+    "content": "Participants assemble a line-following bot and learn control theory basics.",
+    "location": "Robotics Lab",
+    "startTime": "10:00",
+    "endTime": "16:00",
+    "speakers": [
+      "Robotics Club"
+    ],
+    "registrationLink": "https://mitmysore.edu/events/robotics",
+    "contactEmail": "roboticsclub@mitmysore.edu",
+    "highlights": [
+      "Hardware kits",
+      "Mentor pairing",
+      "Certification"
+    ],
+    "color1": "#ff7ab6",
+    "color2": "#ffd36b"
+  },
+  {
+    "id": 10,
+    "title": "Interdepartment Coding Competition",
+    "category": "competition",
+    "date": "2025-11-30",
+    "excerpt": "5-hour coding contest with live leaderboards.",
+    "content": "Challenges include data structures, AI puzzles, and debugging races.",
+    "location": "CS Lab Complex",
+    "startTime": "09:00",
+    "endTime": "14:00",
+    "speakers": [
+      "CS Club"
+    ],
+    "registrationLink": "https://mitmysore.edu/events/coding-comp",
+    "contactEmail": "csclub@mitmysore.edu",
+    "highlights": [
+      "Team play",
+      "Editorial sessions",
+      "Swag kits"
+    ],
+    "color1": "#7afcff",
+    "color2": "#b18cff"
+  },
+  {
+    "id": 11,
+    "title": "Guest Seminar: Advanced VLSI",
+    "category": "seminar",
+    "date": "2025-11-22",
+    "excerpt": "A guest seminar on VLSI design and trends.",
+    "content": "Covers chiplet design, verification automation, and toolchains.",
+    "location": "ECE Auditorium",
+    "startTime": "14:00",
+    "endTime": "16:30",
+    "speakers": [
+      "Ms. Ritu Bhandari (SiliconLabs)",
+      "Prof. Manjunath"
+    ],
+    "registrationLink": "https://mitmysore.edu/seminars/vlsi",
+    "contactEmail": "ece@mitmysore.edu",
+    "highlights": [
+      "Portfolio reviews",
+      "Career AMA",
+      "Lab visits"
+    ],
+    "color1": "#a0d8ff",
+    "color2": "#7bd389"
+  },
+  {
+    "id": 12,
+    "title": "Women in Tech — Panel Discussion",
+    "category": "events",
+    "date": "2025-11-27",
+    "excerpt": "Panel and networking for women in STEM.",
+    "content": "Stories from alumni founders, hiring leads, and IEEE women in engineering council.",
+    "location": "Library Hall B",
+    "startTime": "15:00",
+    "endTime": "18:00",
+    "speakers": [
+      "Aditi Krishnan",
+      "Dr. Meera Kamath"
+    ],
+    "registrationLink": "https://mitmysore.edu/events/women-in-tech",
+    "contactEmail": "we@mitmysore.edu",
+    "highlights": [
+      "Mentor signups",
+      "Leadership toolkit",
+      "Campus ally meet"
+    ],
+    "color1": "#ffd6e0",
+    "color2": "#b18cff"
+  },
+  {
+    "id": 13,
+    "title": "Open Seminar: Quantum Computing Basics",
+    "category": "seminar",
+    "date": "2025-12-02",
+    "excerpt": "Introductory seminar on quantum computing for beginners.",
+    "content": "Includes IBM Qiskit demos, Bloch sphere visualizations, and roadmap guidance.",
+    "location": "Seminar Hall C",
+    "startTime": "11:30",
+    "endTime": "13:30",
+    "speakers": [
+      "Dr. Kiran Pai"
+    ],
+    "registrationLink": "https://mitmysore.edu/seminars/quantum",
+    "contactEmail": "physics@mitmysore.edu",
+    "highlights": [
+      "Hands-on lab",
+      "Resource pack",
+      "Research mini grants"
+    ],
+    "color1": "#7afcff",
+    "color2": "#ffd36b"
+  },
+  {
+    "id": 14,
+    "title": "Intercollege Design Competition",
+    "category": "competition",
+    "date": "2025-12-10",
+    "excerpt": "Design challenge across departments with prototyping.",
+    "content": "Teams craft end-to-end product journeys with prototyping credits and design critiques.",
+    "location": "Design Studio",
+    "startTime": "10:00",
+    "endTime": "19:00",
+    "speakers": [
+      "Design Council"
+    ],
+    "registrationLink": "https://mitmysore.edu/events/design-comp",
+    "contactEmail": "design@mitmysore.edu",
+    "highlights": [
+      "UX labs",
+      "Fabrication support",
+      "Investor jury"
+    ],
+    "color1": "#ff7ab6",
+    "color2": "#ffd36b"
+  },
+  {
+    "id": 16,
+    "title": "Campus Hack Night",
+    "category": "hackathon",
+    "date": "2025-11-28",
+    "excerpt": "Weekly hack night for quick prototypes and jams.",
+    "content": "Lightning talks, API sandboxes, and team mixers every Friday night.",
+    "location": "Learning Commons",
+    "startTime": "18:00",
+    "endTime": "08:00",
+    "speakers": [
+      "Campus DevRel"
+    ],
+    "registrationLink": "https://mitmysore.edu/hackathons/hack-night",
+    "contactEmail": "devrel@mitmysore.edu",
+    "highlights": [
+      "API credits",
+      "Mentor roulette",
+      "Show & tell"
+    ],
+    "color1": "#b18cff",
+    "color2": "#7afcff"
+  }
+]

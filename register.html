@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-role="user">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MIT Mysore — Event Registration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="guard.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="back-link" href="index.html">← Back to all events</a>
+      <h1 id="registerTitle">Complete your registration</h1>
+      <p class="tag" id="registerTag">This page is focused purely on sign-up.</p>
+    </div>
+    <div class="controls">
+      <button type="button" class="pill-link" data-action="logout">Logout</button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="register-page" aria-live="polite">
+    <section class="event-card register-card">
+      <p class="registration-note" id="eventCallout">Loading event…</p>
+      <form id="eventForm" class="event-form" novalidate>
+        <div class="form-grid">
+          <label>
+            <span>Name *</span>
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email *</span>
+            <input type="email" name="email" required placeholder="you@mitmysore.edu" />
+          </label>
+          <label>
+            <span>Department</span>
+            <input type="text" name="department" placeholder="Department" />
+          </label>
+          <label>
+            <span>Year</span>
+            <input type="text" name="year" placeholder="Year" />
+          </label>
+          <label>
+            <span>Phone</span>
+            <input type="tel" name="phone" placeholder="Optional" />
+          </label>
+        </div>
+        <label>
+          <span>Notes</span>
+          <textarea name="notes" rows="3" placeholder="Anything else we should know?"></textarea>
+        </label>
+        <button type="submit">Submit Registration</button>
+      </form>
+      <p id="eventFormStatus" class="event-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <p id="eventError" class="status-note error" hidden></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE-NEWS AND EVENTS PORTAL</p>
+  </footer>
+
+  <script src="register.js"></script>
+</body>
+</html>
