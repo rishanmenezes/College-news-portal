@@ -1,4 +1,4 @@
-# MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE — College News Porta
+# MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE — College News Portal
 
 A colorful, responsive news/events portal for MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE with a lightweight Node/Express backend that serves detailed event data.
 
