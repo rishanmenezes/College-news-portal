@@ -1,20 +1,20 @@
 # MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE — College News Portal
 
-A colorful, responsive news/events portal for MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE with a lightweight Node/Express backend that serves detailed event data. This portal provides a comprehensive platform for students and administrators to manage campus events, news, and registrations.
+A colorful, responsive news/events portal for MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE with a lightweight Node/Express backend that serves detailed event data. This portal provides a platform for students and administrators to manage campus events, news, and registrations.
 
 ## 🌟 Features
 
 ### For Students
 - **Browse Events**: View campus news, academic updates, sports events, tech talks, hackathons, placements, seminars, and competitions
 - **Search & Filter**: Real-time search and category-based filtering of events
-- **Event Details**: Comprehensive event information including agendas, resources, and logistics
+- **Event Details**: Comprehensive event information including date, time, location, speakers, and highlights
 - **Registration System**: Easy event registration with status tracking
 - **User Profiles**: Manage personal information, department, year, and social links
 - **Theme Support**: Dark/Light mode toggle for comfortable viewing
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 
 ### For Administrators
-- **Event Management**: Create, update, and delete events with rich details
+- **Event Management**: Create and delete events with rich details
 - **Registration Management**: Review, accept, or reject student registrations
 - **Dashboard Metrics**: Real-time statistics on events, upcoming activities, and pending approvals
 - **Advanced Filtering**: Filter registrations by status, event, and search terms
@@ -38,11 +38,8 @@ A colorful, responsive news/events portal for MAHARAJA INSTITUTE OF TECHNOLOGY M
 ### Dependencies
 ```json
 {
-  "bcryptjs": "^3.0.3",
   "cors": "^2.8.5",
-  "express": "^5.1.0",
-  "jsonwebtoken": "^9.0.3",
-  "mongoose": "^9.1.3"
+  "express": "^5.1.0"
 }
 ```
 
@@ -148,7 +145,7 @@ College News Portal/
    - Date, time, and location details
    - Speaker information
    - Event highlights
-   - Sample agenda
+   - Auto-generated sample agenda
    - Resources and logistics
 
 3. **Register for Events** (`register.html`)
@@ -161,7 +158,7 @@ College News Portal/
    - Update profile details
    - Change password
    - Add social links
-   - Manage profile photo
+   - Manage profile photo URL
 
 ### Admin Workflow
 
@@ -297,7 +294,7 @@ PATCH /api/registrations/:id
 
 ### Admin/Staff
 - All student permissions
-- Create, update, and delete events
+- Create and delete events
 - View all registrations
 - Accept or reject registrations
 - Access admin dashboard
@@ -384,37 +381,6 @@ PATCH /api/registrations/:id
 }
 ```
 
-## 🧪 Testing
-
-The project includes manual testing capabilities:
-- Test event creation and deletion
-- Test registration flow
-- Test authentication system
-- Test search and filter functionality
-- Test profile management
-
-## 🚧 Future Enhancements
-
-### Planned Features
-- **Database Integration**: Migrate from JSON files to MongoDB or PostgreSQL
-- **Authentication**: Implement JWT-based server-side authentication
-- **Email Notifications**: Send confirmation emails for registrations
-- **File Upload**: Support for event images and document attachments
-- **Pagination**: Implement pagination for large event lists
-- **Comments System**: Allow comments on events
-- **Calendar View**: Monthly calendar view of events
-- **Mobile App**: React Native or Flutter mobile application
-- **Real-time Updates**: WebSocket integration for live updates
-- **Analytics**: Google Analytics integration for usage tracking
-- **Multi-language Support**: Internationalization (i18n)
-
-### Technical Improvements
-- **Unit Testing**: Jest or Mocha test framework
-- **Code Splitting**: Optimize JavaScript loading
-- **Service Workers**: Offline functionality
-- **Performance Optimization**: Lazy loading and caching strategies
-- **Error Handling**: Comprehensive error logging and monitoring
-
 ## 📞 Support
 
 For support and assistance:
@@ -422,19 +388,6 @@ For support and assistance:
 - **Phone**: +91 821 234 5678
 - **Campus Desk**: Admin Block, Room 102 (Mon-Fri, 10:00 AM – 4:00 PM)
 - **Online**: Visit `support.html` for additional resources
-
-## 📝 License
-
-ISC License - See LICENSE file for details
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these guidelines:
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
 
 ## 📄 File Descriptions
 
